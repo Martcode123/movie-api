@@ -1,0 +1,96 @@
+.personal__img {
+    width: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    height: 150px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242424;
+}
+
+.nav__link {
+    padding-right: 32px;
+    font-size: 32px;
+    color: white;
+}
+
+input {
+    width: 100%;
+    height: 70px;
+    max-width: 700px;
+    border-radius: 20px;
+    padding-left: 40px; 
+    font-size: 32px;
+}
+
+.input__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+
+button {
+    margin-left: 32px;
+    width: 100%;
+    max-width: 100px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+button:hover {
+    background-color: #242424;
+     
+}
+
+
+
+.fa-search {
+    position: absolute;
+    right: 350px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    transition: all 300ms ease;
+}
+
+.fa-search:hover {
+    opacity: 0.6;
+}
+
+
+select {
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    padding: 0 16px;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .capper {
+    display: flex;
+    justify-content: space-around;
+    padding: 32px 32px 0 32px;
+  }
+
+
+
+
+

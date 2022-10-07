@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <script src="index.js"></script>
     <title>Document</title>
     <script
-      src="https://kit.fontawesome.com/c8e4d183c2.js"
-      crossorigin="anonymous"
+    src="https://kit.fontawesome.com/c8e4d183c2.js"
+    crossorigin="anonymous"
     ></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
     <nav>
@@ -29,12 +29,12 @@
     </nav>
     <section>
       <div class="input__wrapper">
-        <input type="text" placeholder="Search For Movies Here" />
-        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" placeholder="Search For Movies Here" onchange="onSearchChange(event)"/>
+        <i class="fa fa-search" aria-hidden="true" onchange="onSearchChange(event)"></i>
       </div>
       <div class="capper">
         <h2 class="result">Search For:</h2>
-        <select id="filter">
+        <select id="filter" onchange="filterMovies(event)">
           <option value disabled selected>Sort</option>
           <option value="NEWEST">Date, Newest to Oldest</option>
           <option value="OLDEST">Date, Oldest to Newest</option>
@@ -48,16 +48,16 @@
           <div class="movies__wrapper">
             <div class="movie">
               <figure class="movie__img--wrapper">
-                <img class="movie__img" src="./js assets/logo.svg" alt="" />
+                <img class="movie__img" src="" alt="" />
               </figure>
               <div class="movie__description">
-                <h2 class="movie__title">000000</h2>
-                <h3 class="movie__date">000000</h3>
+                <h2 class="movie__title"></h2>
+                <h3 class="movie__date"></h3>
                 <a
-                  href="https://imdb.com/title/.website"
-                  class="imdb"
-                  target="_blank"
-                  >IMDB</a
+                href="https://imdb.com/title/.website"
+                
+                target="_blank"
+                ></a
                 >
               </div>
             </div>

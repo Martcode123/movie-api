@@ -115,7 +115,7 @@ MOVIES
 
 */
 
-.search .movie{
+ .search .movie{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -174,13 +174,15 @@ MOVIES
 }
 .movie__img {
   width: 100%;
+  
+  flex-wrap: wrap;
 }
 .movie {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: calc(100% / 3);
+  
   margin: 0 auto;
   padding: 12px 24px;
 }
@@ -198,6 +200,28 @@ MOVIES
   text-align: center;
 }
 
+@media (max-width: 550px) {
+ .nav__link {
+    font-size: 20px;
+    padding-right: 24px;
+  }
+  .fa-search {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    transition: all 300ms ease;
+}
+input {
+  font-size: 24px;
+}
+.capper {
+  display: flex;
+  align-items: center;
+}
+
+}
 
 
 

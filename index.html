@@ -30,10 +30,14 @@
     <section>
       <div class="input__wrapper">
         <input type="text" placeholder="Search For Movies Here" onchange="onSearchChange(event)"/>
-        <i class="fa fa-search" aria-hidden="true" onchange="onSearchChange(event)"></i>
+        <button>
+          <i class="fa fa-search" aria-hidden="true" onchange="onSearchChange(event)"></i>
+        </button>
       </div>
       <div class="capper">
-        <h2 class="result">Search For:</h2>
+        <div>
+          <h2>Search For: <span class="result"></span></h2>
+        </div>
         <select id="filter" onchange="filterMovies(event)">
           <option value disabled selected>Sort</option>
           <option value="NEWEST">Date, Newest to Oldest</option>
@@ -46,21 +50,22 @@
       <div class="container">
         <div class="row">
           <div class="movies__wrapper">
-            <div class="movie">
-              <figure class="movie__img--wrapper">
-                <img class="movie__img" src="" alt="" />
-              </figure>
-              <div class="movie__description">
-                <h2 class="movie__title"></h2>
-                <h3 class="movie__date"></h3>
-                <a
-                href="https://imdb.com/title/.website"
-                
-                target="_blank"
-                ></a
-                >
+              <div class="movie">
+                <figure class="movie__img--wrapper">
+                  <img class="movie__img" src="" alt="" />
+                </figure>
+                <div class="movie__description">
+                  <h2 class="movie__title"></h2>
+                  <h3 class="movie__date"></h3>
+                  <a
+                  href="https://imdb.com/title/.website"
+                  
+                  target="_blank"
+                  ></a
+                  >
+                </div>
               </div>
-            </div>
+            
           </div>
         </div>
       </div>
